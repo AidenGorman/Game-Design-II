@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0pgt1xsuwle7"]
+
+[ext_resource type="Script" path="res://prog_54c.gd" id="1_3qbtp"]
+
+[node name="Prog_54c" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3qbtp")
+
+[node name="lblRadius" type="Label" parent="."]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 59.0
+offset_right = 118.0
+offset_bottom = 99.0
+text = "Radius:"
+
+[node name="lblArea" type="Label" parent="."]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 137.0
+offset_right = 288.0
+offset_bottom = 177.0
+text = "Area:"
+
+[node name="lblCircum" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 194.0
+offset_right = 287.0
+offset_bottom = 234.0
+text = "Circumference:"
+
+[node name="txtPi" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 48.0
+offset_right = 240.0
+offset_bottom = 98.0
+
+[node name="btnCalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 251.0
+offset_right = 180.0
+offset_bottom = 309.0
+text = "Calculate"
+
+[node name="btnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 250.0
+offset_right = 363.0
+offset_bottom = 308.0
+text = "Clear"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 250.0
+offset_right = 543.0
+offset_bottom = 308.0
+text = "Exit"
+
+[connection signal="pressed" from="btnCalc" to="." method="_on_btn_calc_pressed"]
+[connection signal="pressed" from="btnClear" to="." method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]

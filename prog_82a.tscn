@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuqsf8r24kqdp"]
+
+[ext_resource type="Script" path="res://Prog82a.gd" id="1_iyi28"]
+
+[node name="Prog82a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iyi28")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 278.0
+offset_bottom = 74.0
+text = "Enter the Speed Limit:"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 76.0
+offset_right = 278.0
+offset_bottom = 132.0
+text = "Enter the Vehicle Speed:"
+
+[node name="lblOut" type="Label" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 125.0
+offset_right = 533.0
+offset_bottom = 231.0
+text = "-"
+
+[node name="txtLimit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 12.0
+offset_right = 354.0
+offset_bottom = 50.0
+
+[node name="txtSpeed" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 69.0
+offset_right = 369.0
+offset_bottom = 107.0
+
+[node name="btnCalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 249.0
+offset_right = 156.0
+offset_bottom = 306.0
+text = "Calculate"
+
+[node name="btnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 250.0
+offset_right = 336.0
+offset_bottom = 307.0
+text = "Clear"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 382.0
+offset_top = 251.0
+offset_right = 508.0
+offset_bottom = 308.0
+text = "Exit"
+
+[connection signal="pressed" from="btnCalc" to="." method="_on_btn_calc_pressed"]
+[connection signal="pressed" from="btnClear" to="." method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]

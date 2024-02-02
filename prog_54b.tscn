@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://xxon0841wjwr"]
+
+[ext_resource type="Script" path="res://prog_54b.gd" id="1_n60st"]
+
+[node name="prog_54b" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n60st")
+
+[node name="txt475" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 21.0
+offset_right = 207.0
+offset_bottom = 69.0
+
+[node name="txt821" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 21.0
+offset_right = 387.0
+offset_bottom = 69.0
+
+[node name="txt369" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 83.0
+offset_right = 206.0
+offset_bottom = 131.0
+
+[node name="txt562" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 84.0
+offset_right = 386.0
+offset_bottom = 132.0
+
+[node name="btnCalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 248.0
+offset_right = 193.0
+offset_bottom = 314.0
+text = "Calculate"
+
+[node name="btnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 249.0
+offset_right = 366.0
+offset_bottom = 315.0
+text = "Clear"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 249.0
+offset_right = 536.0
+offset_bottom = 315.0
+text = "Exit"
+
+[node name="lblSum" type="Label" parent="."]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 170.0
+offset_right = 232.0
+offset_bottom = 216.0
+text = "Sum:"
+
+[node name="lblAverage" type="Label" parent="."]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 169.0
+offset_right = 434.0
+offset_bottom = 215.0
+text = "Average:"
+
+[connection signal="pressed" from="btnCalc" to="." method="_on_btn_calc_pressed"]
+[connection signal="pressed" from="btnClear" to="." method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]

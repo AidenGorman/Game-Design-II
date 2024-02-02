@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccc01k14yh1qs"]
+
+[ext_resource type="Script" path="res://Prog88a.gd" id="1_xd71j"]
+
+[node name="Prog88a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xd71j")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 16.0
+offset_right = 235.0
+offset_bottom = 68.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 18.0
+offset_right = 494.0
+offset_bottom = 70.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 88.0
+offset_right = 572.0
+offset_bottom = 239.0
+
+[node name="btnCalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 259.0
+offset_right = 185.0
+offset_bottom = 318.0
+text = "Calculate"
+
+[node name="btnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 261.0
+offset_right = 394.0
+offset_bottom = 320.0
+text = "Clear"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 262.0
+offset_right = 598.0
+offset_bottom = 321.0
+text = "Exit"
+
+[connection signal="pressed" from="btnCalc" to="." method="_on_btn_calc_pressed"]
+[connection signal="pressed" from="btnClear" to="." method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]

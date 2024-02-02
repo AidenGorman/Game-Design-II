@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy08osimrwbos"]
+
+[ext_resource type="Script" path="res://LP4-1.gd" id="1_61diy"]
+
+[node name="LP4-1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_61diy")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 27.0
+offset_right = 295.0
+offset_bottom = 74.0
+text = "Enter # of copies to print:"
+
+[node name="lblOut" type="Label" parent="."]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 89.0
+offset_right = 653.0
+offset_bottom = 228.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 22.0
+offset_right = 427.0
+offset_bottom = 59.0
+
+[node name="btnCalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 252.0
+offset_right = 220.0
+offset_bottom = 317.0
+text = "Calculate"
+
+[node name="btnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 250.0
+offset_right = 426.0
+offset_bottom = 315.0
+text = "Clear"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 250.0
+offset_right = 627.0
+offset_bottom = 315.0
+text = "Exit"
+
+[connection signal="pressed" from="btnCalc" to="." method="_on_btn_calc_pressed"]
+[connection signal="pressed" from="btnClear" to="." method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="btnExit" to="." method="_on_btn_exit_pressed"]
