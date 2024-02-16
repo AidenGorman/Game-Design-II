@@ -2,8 +2,8 @@ extends Control
 
 
 func _on_btn_calc_pressed():
+	var Radius = float ($txtPi.text)
 	var pi = 3.14159
-	var Radius = float ($lblRadius.text)
 	var Area = pi + Radius**2
 	var Circum = 2 * pi * Radius
 	$lblArea.text = "Area: " + str(Area)
