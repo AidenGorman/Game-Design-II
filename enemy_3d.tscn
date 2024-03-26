@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://biqdkct3e7w67"]
+
+[ext_resource type="Script" path="res://enemy3d.gd" id="1_45rhi"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mtmkb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hpma"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_20gs6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_33lt6"]
+radius = 8.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t1etm"]
+radius = 0.6
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_exm1m"]
+
+[node name="enemy3d" type="CharacterBody3D" groups=["Enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.776583, 1.29251, -53.7365)
+script = ExtResource("1_45rhi")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_mtmkb")
+surface_material_override/0 = SubResource("StandardMaterial3D_6hpma")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_20gs6")
+
+[node name="AttackRange" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00830865, 0.00678444, 0.0112686)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackRange"]
+shape = SubResource("CylinderShape3D_33lt6")
+
+[node name="AttackArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackArea"]
+shape = SubResource("CapsuleShape3D_t1etm")
+
+[node name="DamageArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DamageArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.774548, 0)
+shape = SubResource("SphereShape3D_exm1m")

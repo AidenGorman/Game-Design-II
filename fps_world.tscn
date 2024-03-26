@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8qxqk2fj36a8"]
+
+[ext_resource type="PackedScene" uid="uid://b514455e2udfj" path="res://de_dust_2_with_real_light.tscn" id="1_0m1tb"]
+[ext_resource type="PackedScene" uid="uid://b26aa5rs314pp" path="res://assets/maps/fps_player_template.tscn" id="2_w05xb"]
+[ext_resource type="PackedScene" path="res://assets/maps/fps_enemy_template.tscn" id="3_qdweg"]
+
+[node name="fps_world" type="Node3D"]
+
+[node name="de_dust_2_with_real_light" parent="." instance=ExtResource("1_0m1tb")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+
+[node name="fps_player" parent="." instance=ExtResource("2_w05xb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.84421, 1.00844, 20.5982)
+
+[node name="fps_enemy" parent="." instance=ExtResource("3_qdweg")]
+transform = Transform3D(1, 0, 0, 0, 0.994421, 0.105483, 0, -0.105483, 0.994421, -5.43573, 1.06192, -43.0266)
