@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://q5xubx07bwfm"
+path="res://.godot/imported/Terrain_Water_Flat_Circle.obj-b12a401f208361617136e270dbdb5f21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Terrain_Water_Flat_Circle.obj-b12a401f208361617136e270dbdb5f21.mesh"]
+
+source_file="res://Models/race track kit/Terrain_Water_Flat_Circle.obj"
+dest_files=["res://.godot/imported/Terrain_Water_Flat_Circle.obj-b12a401f208361617136e270dbdb5f21.mesh", "res://.godot/imported/Terrain_Water_Flat_Circle.obj-b12a401f208361617136e270dbdb5f21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

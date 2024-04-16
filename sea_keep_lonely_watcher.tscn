@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://5ikp16yuwlqt"]
+
+[ext_resource type="PackedScene" uid="uid://b52u5iglbkrva" path="res://Shark Tank/sea_keep_lonely_watcher.glb" id="1_23te2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cexkh"]
+sky_top_color = Color(0.384314, 0.454902, 1, 1)
+sky_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+ground_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+
+[sub_resource type="Sky" id="Sky_velpn"]
+sky_material = SubResource("ProceduralSkyMaterial_cexkh")
+
+[sub_resource type="Environment" id="Environment_se8un"]
+background_mode = 2
+sky = SubResource("Sky_velpn")
+tonemap_mode = 2
+
+[node name="sea_keep_lonely_watcher" instance=ExtResource("1_23te2")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+environment = SubResource("Environment_se8un")

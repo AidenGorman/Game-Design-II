@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxwio1io4k1fx"]
+
+[ext_resource type="PackedScene" uid="uid://b52u5iglbkrva" path="res://Shark Tank/sea_keep_lonely_watcher.glb" id="1_pre8w"]
+[ext_resource type="PackedScene" uid="uid://b26aa5rs314pp" path="res://assets/maps/fps_player_template.tscn" id="2_3yr3l"]
+[ext_resource type="PackedScene" uid="uid://il7v4yugkv6q" path="res://assets/maps/fps_enemy_template.tscn" id="3_pydcx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tr4y0"]
+sky_top_color = Color(0.384314, 0.454902, 1, 1)
+sky_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+ground_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+
+[sub_resource type="Sky" id="Sky_7tsgg"]
+sky_material = SubResource("ProceduralSkyMaterial_tr4y0")
+
+[sub_resource type="Environment" id="Environment_05htk"]
+background_mode = 2
+sky = SubResource("Sky_7tsgg")
+tonemap_mode = 2
+
+[node name="SEA_SCENE" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_05htk")
+
+[node name="sea_keep_lonely_watcher" parent="." instance=ExtResource("1_pre8w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.957832, 0, 12.0448)
+
+[node name="fps_player" parent="." instance=ExtResource("2_3yr3l")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -37.8078, -0.212407, 307.017)
+
+[node name="fps_enemy" parent="." instance=ExtResource("3_pydcx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.4816, -1.51433, 269.469)

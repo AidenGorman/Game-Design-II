@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://pyhnn1mgaeuo"
+path="res://.godot/imported/Prop_Track_Arch_1x4.obj-5621d2ec1bab44c6e184336f9e17944c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Track_Arch_1x4.obj-5621d2ec1bab44c6e184336f9e17944c.mesh"]
+
+source_file="res://Models/race track kit/Prop_Track_Arch_1x4.obj"
+dest_files=["res://.godot/imported/Prop_Track_Arch_1x4.obj-5621d2ec1bab44c6e184336f9e17944c.mesh", "res://.godot/imported/Prop_Track_Arch_1x4.obj-5621d2ec1bab44c6e184336f9e17944c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

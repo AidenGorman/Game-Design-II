@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu4ccpmmcnuld"]
+
+[ext_resource type="PackedScene" uid="uid://du4hcj7hhgg0i" path="res://city_scene_tokyo.tscn" id="1_ilhlt"]
+[ext_resource type="PackedScene" uid="uid://b26aa5rs314pp" path="res://assets/maps/fps_player_template.tscn" id="2_itqb5"]
+[ext_resource type="PackedScene" uid="uid://il7v4yugkv6q" path="res://assets/maps/fps_enemy_template.tscn" id="3_kv0ry"]
+
+[node name="fpsworld2" type="Node3D"]
+
+[node name="city_scene_tokyo" parent="." instance=ExtResource("1_ilhlt")]
+
+[node name="fps_player" parent="." instance=ExtResource("2_itqb5")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.02199, 1.36282)
+
+[node name="fps_enemy" parent="." instance=ExtResource("3_kv0ry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5197, 3.44192, -7.96154)
+
+[node name="fps_enemy2" parent="." instance=ExtResource("3_kv0ry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55281, -0.0556037, -7.14605)
+
+[node name="fps_enemy3" parent="." instance=ExtResource("3_kv0ry")]
+transform = Transform3D(-0.0697565, 0, -0.997564, 0, 1, 0, 0.997564, 0, -0.0697565, 12.844, 1.01643, 11.65)

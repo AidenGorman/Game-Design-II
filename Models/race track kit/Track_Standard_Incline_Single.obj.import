@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hm76dogrscok"
+path="res://.godot/imported/Track_Standard_Incline_Single.obj-23ef0d8593d84bab34d3e70c834ee5a7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Track_Standard_Incline_Single.obj-23ef0d8593d84bab34d3e70c834ee5a7.mesh"]
+
+source_file="res://Models/race track kit/Track_Standard_Incline_Single.obj"
+dest_files=["res://.godot/imported/Track_Standard_Incline_Single.obj-23ef0d8593d84bab34d3e70c834ee5a7.mesh", "res://.godot/imported/Track_Standard_Incline_Single.obj-23ef0d8593d84bab34d3e70c834ee5a7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

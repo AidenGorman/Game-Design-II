@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0qpxmbr1jhfi"]
+
+[ext_resource type="PackedScene" uid="uid://c6sdumjcrryxy" path="res://rc_player.tscn" id="1_cof8c"]
+[ext_resource type="MeshLibrary" uid="uid://bwd1q7yqrxfcg" path="res://assets/meshes/roadtiles.tres" id="2_cnrh6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ablgy"]
+sky_top_color = Color(0.384314, 0.454902, 1, 1)
+sky_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+ground_horizon_color = Color(0.646078, 0.655975, 0.78325, 1)
+
+[sub_resource type="Sky" id="Sky_8vc3q"]
+sky_material = SubResource("ProceduralSkyMaterial_ablgy")
+
+[sub_resource type="Environment" id="Environment_aycvd"]
+background_mode = 2
+sky = SubResource("Sky_8vc3q")
+tonemap_mode = 2
+
+[node name="rc_world_3" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_aycvd")
+
+[node name="race" parent="." instance=ExtResource("1_cof8c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0040617, -0.0230503, 0.00845814)
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+mesh_library = ExtResource("2_cnrh6")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65535, 65535, 1048753, 0, 65534, 1441906, 65535, 65534, 1441906, 0, 0, 1441974, 65534, 65535, 1441849, 1, 65535, 655419)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
