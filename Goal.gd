@@ -11,3 +11,4 @@ func _on_body_entered(body):
 		var lvl = "res://" + next_level + ".tscn" 
 		get_tree().change_scene_to_file(lvl)
 		
+		
