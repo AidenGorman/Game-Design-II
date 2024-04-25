@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://c6sdumjcrryxy"]
+[gd_scene load_steps=15 format=3 uid="uid://c6sdumjcrryxy"]
 
 [ext_resource type="Script" path="res://rc_player.gd" id="1_5t22s"]
+[ext_resource type="AudioStream" uid="uid://bc4rmeflqk24t" path="res://sounds/car-engine-idle-epic-stock-media-1-00-17.mp3" id="2_q54o6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7q78f"]
 resource_name = "paintRed"
@@ -270,3 +271,9 @@ offset_top = -23.0
 offset_right = 40.0
 grow_vertical = 0
 label_settings = SubResource("LabelSettings_4vtp1")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_q54o6")
+volume_db = 4.572
+autoplay = true
+doppler_tracking = 2
