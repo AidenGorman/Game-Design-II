@@ -1,21 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmg5yl1ap4eqf"]
+[gd_scene load_steps=6 format=3 uid="uid://cmg5yl1ap4eqf"]
 
 [ext_resource type="Script" path="res://raceGoal.gd" id="1_lpxp2"]
 
+[sub_resource type="FogMaterial" id="FogMaterial_dl3xm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ktfqy"]
+next_pass = SubResource("FogMaterial_dl3xm")
+albedo_color = Color(0.34902, 0.301961, 0.219608, 1)
+
 [sub_resource type="CylinderMesh" id="CylinderMesh_5mam5"]
-top_radius = 1.0
-bottom_radius = 1.0
+material = SubResource("StandardMaterial3D_ktfqy")
+top_radius = 2.0
+bottom_radius = 2.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ytva5"]
-radius = 1.0
+radius = 2.0
 
 [node name="raceGoal" type="Node3D"]
 script = ExtResource("1_lpxp2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102495, 0.843971, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102495, 0.824724, 0)
 mesh = SubResource("CylinderMesh_5mam5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0914326, 0.83386, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.120498, 0.853084, 0)
 shape = SubResource("CylinderShape3D_ytva5")

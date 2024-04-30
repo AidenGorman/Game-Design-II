@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c18wbr62bbbva"]
+[gd_scene load_steps=8 format=3 uid="uid://c18wbr62bbbva"]
 
 [ext_resource type="PackedScene" uid="uid://c6sdumjcrryxy" path="res://rc_player.tscn" id="1_6wrbj"]
 [ext_resource type="MeshLibrary" uid="uid://bwd1q7yqrxfcg" path="res://assets/meshes/roadtiles.tres" id="2_yr61t"]
 [ext_resource type="PackedScene" uid="uid://bcuo0s1v7yoag" path="res://rc_enemy.tscn" id="3_6i3b4"]
+[ext_resource type="PackedScene" uid="uid://cmg5yl1ap4eqf" path="res://race_goal.tscn" id="4_atol6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ikno1"]
 sky_top_color = Color(0.384314, 0.454902, 1, 1)
@@ -40,3 +41,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.62063, 0.0319171, 0.248089
 
 [node name="race3" parent="." instance=ExtResource("3_6i3b4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69531, -0.0818389, -0.157186)
+
+[node name="raceGoal" parent="." instance=ExtResource("4_atol6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.241143, 0, -5.77737)
+next_level = "rc_world_2"
