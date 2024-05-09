@@ -31,5 +31,5 @@ func check_and_right_vehicle():
 		current_rotation.x = 0 
 		current_rotation.z = 0
 		self.rotation_degrees = current_rotation
-	
-	
+
+  $AudioStreamPlayer3D.volume_db = 10  # default
