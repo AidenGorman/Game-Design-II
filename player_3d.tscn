@@ -16,6 +16,7 @@ transform = Transform3D(1.35, 0, 0, 0, 1.35, 0, 0, 0, 1.35, 0, 0.916525, -48.694
 script = ExtResource("1_3tbsk")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -0.00878784, 0, -0.0685883)
 visible = false
 mesh = SubResource("CapsuleMesh_arcdk")
 

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://cecktnnp5xyxd"]
+
+[ext_resource type="PackedScene" uid="uid://xx3ljogq3bpu" path="res://Final project/free_quick_terrain_test.glb" id="1_211lk"]
+[ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_gpljj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4y65y"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_tovj8"]
+sky_material = SubResource("ProceduralSkyMaterial_4y65y")
+
+[sub_resource type="Environment" id="Environment_3xqsj"]
+background_mode = 2
+sky = SubResource("Sky_tovj8")
+tonemap_mode = 2
+
+[node name="Biome_1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3xqsj")
+
+[node name="free_quick_terrain_test" parent="." instance=ExtResource("1_211lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0792334, 0, 0.96997)
+
+[node name="fps_Doozy" parent="." instance=ExtResource("2_gpljj")]
+transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 329.406, 128.907, -305.378)
