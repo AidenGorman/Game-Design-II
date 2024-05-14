@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cecktnnp5xyxd"]
+[gd_scene load_steps=7 format=3 uid="uid://cecktnnp5xyxd"]
 
-[ext_resource type="PackedScene" uid="uid://xx3ljogq3bpu" path="res://Final project/free_quick_terrain_test.glb" id="1_211lk"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_gpljj"]
+[ext_resource type="PackedScene" uid="uid://c32u35yt454s8" path="res://Final project/old_tree.glb" id="3_11dsx"]
+[ext_resource type="PackedScene" uid="uid://66m0h8rm0dao" path="res://free_quick_terrain_test.tscn" id="3_47nf5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4y65y"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -20,8 +21,14 @@ tonemap_mode = 2
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3xqsj")
 
-[node name="free_quick_terrain_test" parent="." instance=ExtResource("1_211lk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0792334, 0, 0.96997)
+[node name="Doozy" parent="." instance=ExtResource("2_gpljj")]
+transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 662.536, 244.224, -648.503)
 
-[node name="fps_Doozy" parent="." instance=ExtResource("2_gpljj")]
-transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 329.406, 128.907, -305.378)
+[node name="free_quick_terrain_test" parent="." instance=ExtResource("3_47nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.211, 127.524, -305.856)
+
+[node name="old_tree" parent="." instance=ExtResource("3_11dsx")]
+transform = Transform3D(-3.23607, 0, 2.35114, 0, 4, 0, -2.35114, 0, -3.23607, 668.004, 242.162, -650.436)
+
+[node name="old_tree2" parent="." instance=ExtResource("3_11dsx")]
+transform = Transform3D(1.23607, 0, -3.80423, 0, 4, 0, 3.80423, 0, 1.23607, 662.108, 238.832, -668.871)
