@@ -28,7 +28,13 @@ transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.211, 127.524, -305.856)
 
 [node name="old_tree" parent="." instance=ExtResource("3_11dsx")]
-transform = Transform3D(-3.23607, 0, 2.35114, 0, 4, 0, -2.35114, 0, -3.23607, 668.004, 242.162, -650.436)
+transform = Transform3D(-3.23607, 0, 2.35114, 0, 4, 0, -2.35114, 0, -3.23607, 668.715, 241.544, -652.154)
 
 [node name="old_tree2" parent="." instance=ExtResource("3_11dsx")]
-transform = Transform3D(1.23607, 0, -3.80423, 0, 4, 0, 3.80423, 0, 1.23607, 662.108, 238.832, -668.871)
+transform = Transform3D(1.23607, 0, -3.80423, 0, 4, 0, 3.80423, 0, 1.23607, 662.307, 239.056, -668.686)
+
+[node name="old_tree3" parent="." instance=ExtResource("3_11dsx")]
+transform = Transform3D(3.87434, 0, 0.994761, 0, 4, 0, -0.994761, 0, 3.87434, 658.011, 250.841, -629.366)
+
+[node name="old_tree4" parent="." instance=ExtResource("3_11dsx")]
+transform = Transform3D(2.91588, 0, -2.73819, 0, 4, 0, 2.73819, 0, 2.91588, 670.191, 231.628, -684.246)
