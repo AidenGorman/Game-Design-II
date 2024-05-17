@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqvhp4mlcviuc"]
+
+[ext_resource type="PackedScene" uid="uid://c0g88oqd5uy58" path="res://FinalProjB2/rocky_desert_v2_-_terrain.glb" id="1_dkm8e"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xey02"]
+
+[node name="rocky_desert_v2_-_terrain" instance=ExtResource("1_dkm8e")]
+transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -60.7098, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_model/SubcalidiousDesert_obj_obj_cleaner_materialmerger_gles" index="7"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/SubcalidiousDesert_obj_obj_cleaner_materialmerger_gles/MeshInstance3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/SubcalidiousDesert_obj_obj_cleaner_materialmerger_gles/MeshInstance3D/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_xey02")

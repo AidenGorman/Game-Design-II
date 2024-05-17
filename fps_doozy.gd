@@ -2,16 +2,18 @@ extends CharacterBody3D
 
 
 const WALK_SPEED = 5.0
-const SPRINT_SPEED = 8.5
+const SPRINT_SPEED = 7.0
 var SPEED = WALK_SPEED
 const JUMP_VELOCITY = 5.0
+
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var model = $Head2/Doozy
 @onready var animator = $Head2/Doozy/AnimationPlayer
 
 const CAM_SENSITIVITY = 0.03
-@onready var camera = $Head/Camera3D
-@onready var camera_arm = $SpringArn
+@onready var camera = $Head2/Camera3D
+@onready var camera_arm = $SpringArm3D
 @onready var camera_pos = camera.position
 var first_person = true
 
@@ -19,6 +21,7 @@ var first_person = true
 var FOV_CHANGE = 1.0
 
 func _physics_process(delta):
+	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr0xhb03vqo48"]
+
+[ext_resource type="PackedScene" uid="uid://bhak68aooydqj" path="res://FinalProjB3/rocky_glacier_-_snowy_landscape_-_terrain.glb" id="1_exo1u"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4qtjm"]
+
+[node name="rocky_glacier_-_snowy_landscape_-_terrain" instance=ExtResource("1_exo1u")]
+transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, -43.2472, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_model/GlacialIceflats_obj_obj_cleaner_materialmerger_gles" index="7"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/GlacialIceflats_obj_obj_cleaner_materialmerger_gles/MeshInstance3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/GlacialIceflats_obj_obj_cleaner_materialmerger_gles/MeshInstance3D/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_4qtjm")

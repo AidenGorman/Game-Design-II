@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://b054i5ao6tgdo"]
+
+[ext_resource type="PackedScene" uid="uid://c0g88oqd5uy58" path="res://FinalProjB2/rocky_desert_v2_-_terrain.glb" id="1_vy6jr"]
+[ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_w26x3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20rei"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_2q1o7"]
+sky_material = SubResource("ProceduralSkyMaterial_20rei")
+
+[sub_resource type="Environment" id="Environment_qjrv8"]
+background_mode = 2
+sky = SubResource("Sky_2q1o7")
+tonemap_mode = 2
+
+[node name="biome_2" type="Node3D"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -42.3204, -36.377, -65.5662)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qjrv8")
+
+[node name="rocky_desert_v2_-_terrain" parent="." instance=ExtResource("1_vy6jr")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.301093, -2.85605, 0.563196)
+
+[node name="Doozy" parent="." instance=ExtResource("2_w26x3")]
+transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.483601, 5.38111)
