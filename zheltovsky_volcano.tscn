@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0leo833spg3q"]
+
+[ext_resource type="PackedScene" uid="uid://bpbmj6xsr6lpr" path="res://FinalProjB5/zheltovsky_volcano.glb" id="1_qdicx"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_akypd"]
+
+[node name="zheltovsky_volcano" instance=ExtResource("1_qdicx")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_akypd")

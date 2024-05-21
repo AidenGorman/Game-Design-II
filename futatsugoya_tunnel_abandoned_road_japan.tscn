@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkhcba5oye1h1"]
+
+[ext_resource type="PackedScene" uid="uid://b8camnto3c3vn" path="res://FinalProjB4/futatsugoya_tunnel_abandoned_road_japan.glb" id="1_7cvah"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_x631x"]
+
+[node name="futatsugoya_tunnel_abandoned_road_japan" instance=ExtResource("1_7cvah")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.642637, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_model" index="1"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/MeshInstance3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/MeshInstance3D/StaticBody3D" index="0"]
+transform = Transform3D(1, -5.91172e-12, -4.65661e-10, 1.04592e-11, 1, 2.32831e-10, 4.65661e-10, 4.65661e-10, 1, -5.48194e-06, -0.0827485, -0.000149362)
+shape = SubResource("ConcavePolygonShape3D_x631x")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://cohvoht7iseim"]
+
+[ext_resource type="PackedScene" uid="uid://b8camnto3c3vn" path="res://FinalProjB4/futatsugoya_tunnel_abandoned_road_japan.glb" id="1_n65mx"]
+[ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_ve1qr"]
+[ext_resource type="PackedScene" uid="uid://b4jgi1om35u7j" path="res://particle_demo.tscn" id="3_2bue1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y03so"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_dng68"]
+sky_material = SubResource("ProceduralSkyMaterial_y03so")
+
+[sub_resource type="Environment" id="Environment_cpp23"]
+background_mode = 2
+sky = SubResource("Sky_dng68")
+tonemap_mode = 2
+
+[node name="biome_4" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.87334, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_cpp23")
+
+[node name="futatsugoya_tunnel_abandoned_road_japan" parent="." instance=ExtResource("1_n65mx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.276691, 0, 0.707201)
+
+[node name="Doozy" parent="." instance=ExtResource("2_ve1qr")]
+transform = Transform3D(-0.00497613, 0, 0.000488001, 0, 0.005, 0, -0.000488001, 0, -0.00497613, -1.75785, 1.82043, 197.791)
+
+[node name="particle_demo" parent="." instance=ExtResource("3_2bue1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92661, 1.6696, 194.649)

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkx1ei3hr74vs"]
+
+[ext_resource type="PackedScene" uid="uid://bpbmj6xsr6lpr" path="res://FinalProjB5/zheltovsky_volcano.glb" id="1_yr54b"]
+[ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_rifre"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_75q8t"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_l0u7g"]
+sky_material = SubResource("ProceduralSkyMaterial_75q8t")
+
+[sub_resource type="Environment" id="Environment_aycba"]
+background_mode = 2
+sky = SubResource("Sky_l0u7g")
+tonemap_mode = 2
+
+[node name="biome_5" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_aycba")
+
+[node name="zheltovsky_volcano" parent="." instance=ExtResource("1_yr54b")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.889737, 0, -1.37791)
+
+[node name="Doozy" parent="." instance=ExtResource("2_rifre")]
+transform = Transform3D(-0.0122642, 0, -0.0157984, 0, 0.02, 0, 0.0157984, 0, -0.0122642, 296.034, 3.66312, 296.177)
