@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cecktnnp5xyxd"]
+[gd_scene load_steps=9 format=3 uid="uid://cecktnnp5xyxd"]
 
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_gpljj"]
 [ext_resource type="PackedScene" uid="uid://c32u35yt454s8" path="res://Final project/old_tree.glb" id="3_11dsx"]
 [ext_resource type="PackedScene" uid="uid://66m0h8rm0dao" path="res://free_quick_terrain_test.tscn" id="3_47nf5"]
 [ext_resource type="PackedScene" uid="uid://bfvdou1ucm34y" path="res://Final project/tree.glb" id="4_h253a"]
+[ext_resource type="PackedScene" uid="uid://ybetcld88f5n" path="res://Final project/log.glb" id="5_vcrli"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4y65y"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -41,4 +42,7 @@ transform = Transform3D(3.87434, 0, 0.994761, 0, 4, 0, -0.994761, 0, 3.87434, 65
 transform = Transform3D(2.91588, 0, -2.73819, 0, 4, 0, 2.73819, 0, 2.91588, 670.191, 231.628, -684.246)
 
 [node name="tree" parent="." instance=ExtResource("4_h253a")]
-transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 661.807, 242.933, -819.664)
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 660.5, 244.508, -807.476)
+
+[node name="log" parent="." instance=ExtResource("5_vcrli")]
+transform = Transform3D(0.0182242, 0.000597259, 0.0171033, 0, 0.0249848, -0.000872487, -0.0171137, 0.000636016, 0.0182131, 669.536, 226.543, -725.787)
