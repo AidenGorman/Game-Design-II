@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://b054i5ao6tgdo"]
+[gd_scene load_steps=9 format=3 uid="uid://b054i5ao6tgdo"]
 
 [ext_resource type="PackedScene" uid="uid://c0g88oqd5uy58" path="res://FinalProjB2/rocky_desert_v2_-_terrain.glb" id="1_vy6jr"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_w26x3"]
+[ext_resource type="PackedScene" uid="uid://b5xyfpfq16cdi" path="res://FinalProjB2/desert_rocks.glb" id="3_xfmmi"]
+[ext_resource type="PackedScene" uid="uid://b8o7kkvyvt7y5" path="res://FinalProjB2/cactus.glb" id="4_d4v4v"]
+[ext_resource type="PackedScene" path="res://FinalProjB2/way_path_blocks.glb" id="5_6sken"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20rei"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -26,3 +29,45 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.301093, -2.85605, 0.5631
 
 [node name="Doozy" parent="." instance=ExtResource("2_w26x3")]
 transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.483601, 5.38111)
+
+[node name="desert_rocks" parent="." instance=ExtResource("3_xfmmi")]
+transform = Transform3D(0.218691, 0, -0.205364, 0, 0.3, 0, 0.205364, 0, 0.218691, 4.81979, 0.558575, 4.81955)
+
+[node name="cactus" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(0.251162, 0, -3.99211, 0, 4, 0, 3.99211, 0, 0.251162, 4.59693, 0.391735, 5.45034)
+
+[node name="p" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.0658719, 0.580709, -0.135785, -0.226883, 0.150741, 0.534604, 0.55153, -0.0073467, 0.236138, 4.60319, 0.25725, 5.17163)
+
+[node name="p2" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.0658719, 0.580709, -0.135785, -0.226883, 0.150741, 0.534604, 0.55153, -0.0073467, 0.236138, 4.39337, 0.255232, 5.09189)
+
+[node name="p3" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.0733574, 0.564292, -0.190244, -0.226883, 0.150741, 0.534604, 0.550584, 0.137301, 0.194951, 4.20879, 0.255232, 4.99816)
+
+[node name="p4" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.207977, 0.512419, -0.23275, -0.226883, 0.150741, 0.534604, 0.515043, 0.273321, 0.141514, 4.06534, 0.260521, 4.86557)
+
+[node name="p5" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 3.80891, 0.261911, 4.75905)
+
+[node name="p6" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 3.6829, 0.264277, 4.56854)
+
+[node name="p7" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 3.55278, 0.269412, 4.38596)
+
+[node name="p8" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 3.42476, 0.271866, 4.20729)
+
+[node name="p9" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 3.29278, 0.274167, 4.0209)
+
+[node name="p10" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 3.16676, 0.279006, 3.83039)
+
+[node name="p11" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 3.03664, 0.28328, 3.64781)
+
+[node name="p12" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 2.90862, 0.290166, 3.46915)
