@@ -1,10 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://b054i5ao6tgdo"]
+[gd_scene load_steps=15 format=3 uid="uid://b054i5ao6tgdo"]
 
 [ext_resource type="PackedScene" uid="uid://c0g88oqd5uy58" path="res://FinalProjB2/rocky_desert_v2_-_terrain.glb" id="1_vy6jr"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_w26x3"]
 [ext_resource type="PackedScene" uid="uid://b5xyfpfq16cdi" path="res://FinalProjB2/desert_rocks.glb" id="3_xfmmi"]
 [ext_resource type="PackedScene" uid="uid://b8o7kkvyvt7y5" path="res://FinalProjB2/cactus.glb" id="4_d4v4v"]
-[ext_resource type="PackedScene" path="res://FinalProjB2/way_path_blocks.glb" id="5_6sken"]
+[ext_resource type="PackedScene" uid="uid://dhig6frtnvwkf" path="res://FinalProjB2/way_path_blocks.glb" id="5_6sken"]
+[ext_resource type="PackedScene" uid="uid://brdgftfs3u3lk" path="res://FinalProjB2/little_post_fbx.glb" id="6_br1f6"]
+[ext_resource type="PackedScene" uid="uid://cdqirhbhbx4bs" path="res://FinalProjB2/gryphon_skeleton.glb" id="7_mpyaq"]
+[ext_resource type="PackedScene" uid="uid://bwwpa2tlx0hj6" path="res://FinalProjB2/plateosaurus_skeleton.glb" id="8_wruv2"]
+[ext_resource type="PackedScene" uid="uid://b2vqv11syegxu" path="res://FinalProjB2/desert_building.glb" id="9_plmug"]
+[ext_resource type="PackedScene" uid="uid://qvqsnbu5631c" path="res://FinalProjB2/animated_triceratops_skeleton.glb" id="10_q0bof"]
+[ext_resource type="PackedScene" path="res://FinalProjB2/stone_elemental.glb" id="11_2g5nx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20rei"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -71,3 +77,51 @@ transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534
 
 [node name="p12" parent="." instance=ExtResource("5_6sken")]
 transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 2.90862, 0.290166, 3.46915)
+
+[node name="p13" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 2.79101, 0.294441, 3.2815)
+
+[node name="p14" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.26153, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490026, -0.326225, -0.11598, 2.66499, 0.29928, 3.09099)
+
+[node name="p15" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 2.53487, 0.303554, 2.90841)
+
+[node name="p16" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 2.40685, 0.31044, 2.72975)
+
+[node name="p17" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.261531, -0.480473, 0.24647, -0.226883, 0.150741, 0.534604, -0.490027, -0.326225, -0.11598, 2.28332, 0.310897, 2.54252)
+
+[node name="p18" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(0.13145, -0.546507, 0.209884, -0.226883, 0.150741, 0.534604, -0.539672, -0.196487, -0.173631, 2.14651, 0.315403, 2.38511)
+
+[node name="p19" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.00689119, -0.578202, 0.160109, -0.226883, 0.150741, 0.534604, -0.555407, -0.0544034, -0.220372, 2.04365, 0.323555, 2.32333)
+
+[node name="p20" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.144799, -0.573567, 0.100275, -0.226883, 0.150741, 0.534604, -0.536245, 0.0910988, -0.253266, 1.91824, 0.330307, 2.29408)
+
+[node name="p21" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.135842, -0.579518, 0.0755436, -0.170926, 0.113563, 0.563816, -0.558867, 0.106129, -0.190801, 1.77775, 0.327052, 2.25783)
+
+[node name="p22" parent="." instance=ExtResource("5_6sken")]
+transform = Transform3D(-0.270559, -0.534918, 0.0257199, -0.170926, 0.113563, 0.563816, -0.507527, 0.246915, -0.203594, 1.67628, 0.334352, 2.25801)
+
+[node name="little_post_fbx" parent="." instance=ExtResource("6_br1f6")]
+transform = Transform3D(0.000728969, 0, 0.000684547, 0, 0.001, 0, -0.000684547, 0, 0.000728969, 4.80324, 0.380528, 5.11989)
+
+[node name="gryphon_skeleton" parent="." instance=ExtResource("7_mpyaq")]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, 1.34847, 0.898978, 1.51819)
+
+[node name="plateosaurus_skeleton" parent="." instance=ExtResource("8_wruv2")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.82945, 1.32258, 3.99875)
+
+[node name="desert_building" parent="." instance=ExtResource("9_plmug")]
+transform = Transform3D(0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, 0.0707107, 3.3029, 0.443101, 2.90959)
+
+[node name="animated_triceratops_skeleton" parent="." instance=ExtResource("10_q0bof")]
+transform = Transform3D(-0.0851559, 0, 0.180965, 0, 0.2, 0, -0.180965, 0, -0.0851559, 3.35761, 0.561306, 4.9677)
+
+[node name="stone_elemental" parent="." instance=ExtResource("11_2g5nx")]
+transform = Transform3D(-0.00191227, 0, -0.00231154, 0, 0.003, 0, 0.00231154, 0, -0.00191227, 0.242325, 0.564863, 1.40166)

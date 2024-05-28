@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://brf0e251cs4yc"]
+[gd_scene load_steps=7 format=3 uid="uid://brf0e251cs4yc"]
 
 [ext_resource type="PackedScene" uid="uid://bhak68aooydqj" path="res://FinalProjB3/rocky_glacier_-_snowy_landscape_-_terrain.glb" id="1_3bs74"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_6bywd"]
+[ext_resource type="PackedScene" uid="uid://diltiq6fgaxty" path="res://FinalProjB3/evil_snowman.glb" id="3_71oqh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3lrml"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -16,6 +17,12 @@ sky = SubResource("Sky_qqi0t")
 tonemap_mode = 2
 
 [node name="biome_3" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.675928, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_color = Color(0.831373, 0.945098, 1, 1)
+shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_utt4x")
@@ -25,3 +32,6 @@ transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, 0.310774, -13.1551, 0.6046
 
 [node name="Doozy" parent="." instance=ExtResource("2_6bywd")]
 transform = Transform3D(0.000681998, 0, 0.000731354, 0, 0.001, 0, -0.000731354, 0, 0.000681998, -33.346, 0.748474, -32.997)
+
+[node name="evil_snowman" parent="." instance=ExtResource("3_71oqh")]
+transform = Transform3D(-2.97634, 0, -0.376, 0, 3, 0, 0.376, 0, -2.97634, -31.3182, -0.101185, -26.8702)
