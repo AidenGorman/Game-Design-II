@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://brf0e251cs4yc"]
+[gd_scene load_steps=8 format=3 uid="uid://brf0e251cs4yc"]
 
 [ext_resource type="PackedScene" uid="uid://bhak68aooydqj" path="res://FinalProjB3/rocky_glacier_-_snowy_landscape_-_terrain.glb" id="1_3bs74"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_6bywd"]
 [ext_resource type="PackedScene" uid="uid://diltiq6fgaxty" path="res://FinalProjB3/evil_snowman.glb" id="3_71oqh"]
+[ext_resource type="PackedScene" uid="uid://mpwuexvtgxyk" path="res://FinalProjB3/horror_snowman.glb" id="4_klt54"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3lrml"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -35,3 +36,6 @@ transform = Transform3D(0.000681998, 0, 0.000731354, 0, 0.001, 0, -0.000731354, 
 
 [node name="evil_snowman" parent="." instance=ExtResource("3_71oqh")]
 transform = Transform3D(-2.97634, 0, -0.376, 0, 3, 0, 0.376, 0, -2.97634, -31.3182, -0.101185, -26.8702)
+
+[node name="horror_snowman" parent="." instance=ExtResource("4_klt54")]
+transform = Transform3D(1.23348, 0, -3.80507, 0, 4, 0, 3.80507, 0, 1.23348, -17.8164, 2.33138, -29.8441)

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bwwpa2tlx0hj6" path="res://FinalProjB2/plateosaurus_skeleton.glb" id="8_wruv2"]
 [ext_resource type="PackedScene" uid="uid://b2vqv11syegxu" path="res://FinalProjB2/desert_building.glb" id="9_plmug"]
 [ext_resource type="PackedScene" uid="uid://qvqsnbu5631c" path="res://FinalProjB2/animated_triceratops_skeleton.glb" id="10_q0bof"]
-[ext_resource type="PackedScene" path="res://FinalProjB2/stone_elemental.glb" id="11_2g5nx"]
+[ext_resource type="PackedScene" uid="uid://c4nimykawyln8" path="res://FinalProjB2/stone_elemental.glb" id="11_2g5nx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20rei"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -119,6 +119,9 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.82945, 1.32258, 3.998
 
 [node name="desert_building" parent="." instance=ExtResource("9_plmug")]
 transform = Transform3D(0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, 0.0707107, 3.3029, 0.443101, 2.90959)
+
+[node name="desert_building2" parent="." instance=ExtResource("9_plmug")]
+transform = Transform3D(-0.0658617, 0, 0.0237117, 0, 0.07, 0, -0.0237117, 0, -0.0658617, 0.809793, 0.556243, 0.189951)
 
 [node name="animated_triceratops_skeleton" parent="." instance=ExtResource("10_q0bof")]
 transform = Transform3D(-0.0851559, 0, 0.180965, 0, 0.2, 0, -0.180965, 0, -0.0851559, 3.35761, 0.561306, 4.9677)

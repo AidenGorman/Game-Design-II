@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxqwhep8burrn"]
+
+[ext_resource type="PackedScene" uid="uid://d228t1iylv56g" path="res://FinalProjChar/cac-1715285541688.glb" id="1_tffgm"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_dvevs"]
+radius = 30.0
+height = 140.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y60bd"]
+radius = 30.0
+height = 150.0
+
+[node name="doozy2" instance=ExtResource("1_tffgm")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.356197, -28.8295, 1.06835)
+visible = false
+mesh = SubResource("CapsuleMesh_dvevs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37401, -1.95488, 10.7694)
+shape = SubResource("CapsuleShape3D_y60bd")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." index="2"]
+spring_length = 6.0
+
+[node name="Skeleton3D" parent="Node2" index="0"]
+bones/7/rotation = Quaternion(0.578943, 0.403814, -0.584662, 0.399911)
+bones/47/rotation = Quaternion(-3.03012e-05, -0.00193376, -0.999875, 0.0156676)

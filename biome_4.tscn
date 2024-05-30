@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b8camnto3c3vn" path="res://FinalProjB4/futatsugoya_tunnel_abandoned_road_japan.glb" id="1_n65mx"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_ve1qr"]
 [ext_resource type="PackedScene" uid="uid://b4jgi1om35u7j" path="res://particle_demo.tscn" id="3_2bue1"]
-[ext_resource type="PackedScene" path="res://FinalProjB4/scary_creature.glb" id="4_mydh7"]
+[ext_resource type="PackedScene" uid="uid://c1aq7c4c8f53v" path="res://FinalProjB4/scary_creature.glb" id="4_mydh7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y03so"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
