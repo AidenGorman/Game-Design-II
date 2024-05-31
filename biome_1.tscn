@@ -24,7 +24,7 @@ tonemap_mode = 2
 environment = SubResource("Environment_3xqsj")
 
 [node name="Doozy" parent="." instance=ExtResource("2_gpljj")]
-transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 662.536, 244.43, -648.503)
+transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 663.999, 248.095, -640.636)
 
 [node name="free_quick_terrain_test" parent="." instance=ExtResource("3_47nf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.211, 127.524, -305.856)

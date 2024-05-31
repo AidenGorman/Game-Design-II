@@ -34,13 +34,34 @@ environment = SubResource("Environment_qjrv8")
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.301093, -2.85605, 0.563196)
 
 [node name="Doozy" parent="." instance=ExtResource("2_w26x3")]
-transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.483601, 5.38111)
+transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.694846, 5.38111)
 
 [node name="desert_rocks" parent="." instance=ExtResource("3_xfmmi")]
 transform = Transform3D(0.218691, 0, -0.205364, 0, 0.3, 0, 0.205364, 0, 0.218691, 4.81979, 0.558575, 4.81955)
 
-[node name="cactus" parent="." instance=ExtResource("4_d4v4v")]
+[node name="c" parent="." instance=ExtResource("4_d4v4v")]
 transform = Transform3D(0.251162, 0, -3.99211, 0, 4, 0, 3.99211, 0, 0.251162, 4.59693, 0.391735, 5.45034)
+
+[node name="c2" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(0.251162, 0, -3.99211, 0, 4, 0, 3.99211, 0, 0.251162, 4.07278, 0.386901, 5.34539)
+
+[node name="c3" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(0.251162, 0, -3.99211, 0, 4, 0, 3.99211, 0, 0.251162, 4.31564, 0.386901, 4.66621)
+
+[node name="c4" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(0.251162, 0, -3.99211, 0, 4, 0, 3.99211, 0, 0.251162, 4.07636, 0.386901, 4.20521)
+
+[node name="c5" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(3.50523, 0, -1.92702, 0, 4, 0, 1.92702, 0, 3.50523, 5.16524, 0.386901, 4.77589)
+
+[node name="c6" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(3.50523, 0, -1.92702, 0, 4, 0, 1.92702, 0, 3.50523, 4.77568, 0.386901, 4.28402)
+
+[node name="c7" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(3.50523, 0, -1.92702, 0, 4, 0, 1.92702, 0, 3.50523, 4.92192, 0.397794, 3.84168)
+
+[node name="c8" parent="." instance=ExtResource("4_d4v4v")]
+transform = Transform3D(3.50523, 0, -1.92702, 0, 4, 0, 1.92702, 0, 3.50523, 4.35, 0.392142, 3.84168)
 
 [node name="p" parent="." instance=ExtResource("5_6sken")]
 transform = Transform3D(0.0658719, 0.580709, -0.135785, -0.226883, 0.150741, 0.534604, 0.55153, -0.0073467, 0.236138, 4.60319, 0.25725, 5.17163)
