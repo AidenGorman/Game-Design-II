@@ -22,6 +22,10 @@ var first_person = true
 var FOV_CHANGE = 1.0
 
 func _physics_process(delta):
+	
+	
+	if Input.is_action_just_pressed("ui_up"):
+		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cohvoht7iseim"]
+[gd_scene load_steps=9 format=3 uid="uid://cohvoht7iseim"]
 
 [ext_resource type="PackedScene" uid="uid://b8camnto3c3vn" path="res://FinalProjB4/futatsugoya_tunnel_abandoned_road_japan.glb" id="1_n65mx"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_ve1qr"]
 [ext_resource type="PackedScene" uid="uid://b4jgi1om35u7j" path="res://particle_demo.tscn" id="3_2bue1"]
 [ext_resource type="PackedScene" uid="uid://c1aq7c4c8f53v" path="res://FinalProjB4/scary_creature.glb" id="4_mydh7"]
+[ext_resource type="PackedScene" uid="uid://crivi3ncf6dn7" path="res://goal.tscn" id="5_pvoec"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y03so"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -34,3 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92661, 1.6696, 194.649)
 
 [node name="scary_creature" parent="." instance=ExtResource("4_mydh7")]
 transform = Transform3D(1.05157, 0, 0.578104, 0, 1.2, 0, -0.578104, 0, 1.05157, -1.85915, 3.15351, 119.712)
+
+[node name="Goal" parent="." instance=ExtResource("5_pvoec")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -5.86566, 0.394637, -210.767)
+next_level = "biome_5"

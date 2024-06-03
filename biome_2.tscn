@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b054i5ao6tgdo"]
+[gd_scene load_steps=17 format=3 uid="uid://b054i5ao6tgdo"]
 
 [ext_resource type="PackedScene" uid="uid://c0g88oqd5uy58" path="res://FinalProjB2/rocky_desert_v2_-_terrain.glb" id="1_vy6jr"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_w26x3"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b2vqv11syegxu" path="res://FinalProjB2/desert_building.glb" id="9_plmug"]
 [ext_resource type="PackedScene" uid="uid://qvqsnbu5631c" path="res://FinalProjB2/animated_triceratops_skeleton.glb" id="10_q0bof"]
 [ext_resource type="PackedScene" uid="uid://c4nimykawyln8" path="res://FinalProjB2/stone_elemental.glb" id="11_2g5nx"]
+[ext_resource type="PackedScene" uid="uid://crivi3ncf6dn7" path="res://goal.tscn" id="12_00a06"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20rei"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -23,6 +24,9 @@ sky_material = SubResource("ProceduralSkyMaterial_20rei")
 background_mode = 2
 sky = SubResource("Sky_2q1o7")
 tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_776uk"]
+albedo_color = Color(1, 0.956863, 0.596078, 1)
 
 [node name="biome_2" type="Node3D"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -42.3204, -36.377, -65.5662)
@@ -132,6 +136,9 @@ transform = Transform3D(-0.270559, -0.534918, 0.0257199, -0.170926, 0.113563, 0.
 [node name="little_post_fbx" parent="." instance=ExtResource("6_br1f6")]
 transform = Transform3D(0.000728969, 0, 0.000684547, 0, 0.001, 0, -0.000684547, 0, 0.000728969, 4.80324, 0.380528, 5.11989)
 
+[node name="little_post_fbx2" parent="." instance=ExtResource("6_br1f6")]
+transform = Transform3D(0.000728969, 0, 0.000684547, 0, 0.001, 0, -0.000684547, 0, 0.000728969, 1.41678, 0.885476, 1.09674)
+
 [node name="gryphon_skeleton" parent="." instance=ExtResource("7_mpyaq")]
 transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, 1.34847, 0.898978, 1.51819)
 
@@ -149,3 +156,37 @@ transform = Transform3D(-0.0851559, 0, 0.180965, 0, 0.2, 0, -0.180965, 0, -0.085
 
 [node name="stone_elemental" parent="." instance=ExtResource("11_2g5nx")]
 transform = Transform3D(-0.00191227, 0, -0.00231154, 0, 0.003, 0, 0.00231154, 0, -0.00191227, 0.242325, 0.564863, 1.40166)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.26352, 0.617353, 1.98)
+use_collision = true
+size = Vector3(0.463231, 0.101145, 0.384578)
+material = SubResource("StandardMaterial3D_776uk")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.40173, 0.71123, 1.85561)
+use_collision = true
+size = Vector3(0.463231, 0.101145, 0.384578)
+material = SubResource("StandardMaterial3D_776uk")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.52386, 0.758848, 1.71684)
+use_collision = true
+size = Vector3(0.463231, 0.101145, 0.384578)
+material = SubResource("StandardMaterial3D_776uk")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.65071, 0.817724, 1.58112)
+use_collision = true
+size = Vector3(0.463231, 0.101145, 0.384578)
+material = SubResource("StandardMaterial3D_776uk")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.69029, 0.858418, 1.40296)
+use_collision = true
+size = Vector3(0.463231, 0.101145, 0.384578)
+material = SubResource("StandardMaterial3D_776uk")
+
+[node name="Goal" parent="." instance=ExtResource("12_00a06")]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -4.25187, 1.00018, -4.25549)
+next_level = "biome_3"

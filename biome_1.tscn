@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://cecktnnp5xyxd"]
+[gd_scene load_steps=11 format=3 uid="uid://cecktnnp5xyxd"]
 
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_gpljj"]
 [ext_resource type="PackedScene" uid="uid://c32u35yt454s8" path="res://Final project/old_tree.glb" id="3_11dsx"]
 [ext_resource type="PackedScene" uid="uid://66m0h8rm0dao" path="res://free_quick_terrain_test.tscn" id="3_47nf5"]
 [ext_resource type="PackedScene" uid="uid://bfvdou1ucm34y" path="res://Final project/tree.glb" id="4_h253a"]
 [ext_resource type="PackedScene" uid="uid://ybetcld88f5n" path="res://Final project/log.glb" id="5_vcrli"]
+[ext_resource type="PackedScene" uid="uid://crivi3ncf6dn7" path="res://goal.tscn" id="6_vogdi"]
+[ext_resource type="PackedScene" uid="uid://bgdvn8wwg3587" path="res://Final project/mighty_oak_trees.glb" id="7_q14f0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4y65y"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -46,3 +48,46 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 660.5, 244.508, -807.476)
 
 [node name="log" parent="." instance=ExtResource("5_vcrli")]
 transform = Transform3D(0.0182242, 0.000597259, 0.0171033, 0, 0.0249848, -0.000872487, -0.0171137, 0.000636016, 0.0182131, 669.536, 226.543, -725.787)
+
+[node name="Goal" parent="." instance=ExtResource("6_vogdi")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1270.98, 262.008, -727.624)
+next_level = "biome_2"
+
+[node name="mot" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 883.788, 144.18, -743.568)
+
+[node name="mot2" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 920.921, 139.419, -745.677)
+
+[node name="mot3" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 856.539, 150.051, -653.746)
+
+[node name="mot4" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 878.114, 152.468, -859.755)
+
+[node name="mot5" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 838.131, 156.937, -844.234)
+
+[node name="mot6" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 919.141, 152.099, -832.885)
+
+[node name="mot7" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 954.21, 145.343, -782.385)
+
+[node name="mot8" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 854.909, 146.315, -763.016)
+
+[node name="mot9" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 894.802, 147.102, -652.043)
+
+[node name="mot10" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 922.009, 145.318, -651.978)
+
+[node name="mot11" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 818.091, 149.448, -724.754)
+
+[node name="mot12" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 966.519, 146.12, -681.844)
+
+[node name="mot13" parent="." instance=ExtResource("7_q14f0")]
+transform = Transform3D(-0.278933, 0, -0.110437, 0, 0.3, 0, 0.110437, 0, -0.278933, 831.289, 156.816, -607.396)
