@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://brf0e251cs4yc"]
+[gd_scene load_steps=11 format=3 uid="uid://brf0e251cs4yc"]
 
 [ext_resource type="PackedScene" uid="uid://bhak68aooydqj" path="res://FinalProjB3/rocky_glacier_-_snowy_landscape_-_terrain.glb" id="1_3bs74"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_6bywd"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://mpwuexvtgxyk" path="res://FinalProjB3/horror_snowman.glb" id="4_klt54"]
 [ext_resource type="PackedScene" uid="uid://d0i36m4da2lkg" path="res://FinalProjB3/snowy_wooden_hut.glb" id="5_wrojx"]
 [ext_resource type="PackedScene" uid="uid://crivi3ncf6dn7" path="res://goal.tscn" id="6_1btpo"]
+[ext_resource type="PackedScene" uid="uid://brdgftfs3u3lk" path="res://FinalProjB2/little_post_fbx.glb" id="7_s32xy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3lrml"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -54,3 +55,9 @@ transform = Transform3D(-0.242705, 0, 0.176336, 0, 0.3, 0, -0.176336, 0, -0.2427
 [node name="Goal" parent="." instance=ExtResource("6_1btpo")]
 transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 34.5426, 4.62632, 35.0423)
 next_level = "biome_4"
+
+[node name="little_post_fbx" parent="." instance=ExtResource("7_s32xy")]
+transform = Transform3D(-0.00199177, 0, -0.000181265, 0, 0.002, 0, 0.000181265, 0, -0.00199177, -33.2798, 0.568039, -32.2552)
+
+[node name="little_post_fbx2" parent="." instance=ExtResource("7_s32xy")]
+transform = Transform3D(-0.00183273, 0, 0.000800698, 0, 0.002, 0, -0.000800698, 0, -0.00183273, 0.824289, 8.13052, 3.11123)

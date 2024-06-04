@@ -20,13 +20,13 @@ background_mode = 2
 sky = SubResource("Sky_tovj8")
 tonemap_mode = 2
 
-[node name="Biome_1" type="Node3D"]
+[node name="Biome_2" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3xqsj")
 
 [node name="Doozy" parent="." instance=ExtResource("2_gpljj")]
-transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 663.999, 248.095, -640.636)
+transform = Transform3D(-0.02, 0, 1.74846e-09, 0, 0.02, 0, -1.74846e-09, 0, -0.02, 663.999, 249.145, -637.865)
 
 [node name="free_quick_terrain_test" parent="." instance=ExtResource("3_47nf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 332.211, 127.524, -305.856)
@@ -66,7 +66,7 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 856.539, 150.051, -653.
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 878.114, 152.468, -859.755)
 
 [node name="mot5" parent="." instance=ExtResource("7_q14f0")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 838.131, 156.937, -844.234)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 838.131, 149.669, -844.234)
 
 [node name="mot6" parent="." instance=ExtResource("7_q14f0")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 919.141, 152.099, -832.885)
@@ -75,7 +75,7 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 919.141, 152.099, -832.
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 954.21, 145.343, -782.385)
 
 [node name="mot8" parent="." instance=ExtResource("7_q14f0")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 854.909, 146.315, -763.016)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 854.909, 145.593, -763.016)
 
 [node name="mot9" parent="." instance=ExtResource("7_q14f0")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 894.802, 147.102, -652.043)
