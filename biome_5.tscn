@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bkx1ei3hr74vs"]
+[gd_scene load_steps=7 format=3 uid="uid://bkx1ei3hr74vs"]
 
 [ext_resource type="PackedScene" uid="uid://bpbmj6xsr6lpr" path="res://FinalProjB5/zheltovsky_volcano.glb" id="1_yr54b"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_rifre"]
+[ext_resource type="PackedScene" path="res://FinalProjB5/sakura_tree_01_-_low_poly_model.glb" id="3_p2u40"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_75q8t"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -25,3 +26,27 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.889737, 0, -1.37791)
 
 [node name="Doozy" parent="." instance=ExtResource("2_rifre")]
 transform = Transform3D(-0.0122642, 0, -0.0157984, 0, 0.02, 0, 0.0157984, 0, -0.0122642, 296.034, 3.66312, 296.177)
+
+[node name="st1" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 280.369, 2.53691, 290.28)
+
+[node name="st2" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 291.123, 2.66261, 274.129)
+
+[node name="st3" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 265.098, 3.19968, 279.119)
+
+[node name="st4" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 275.851, 3.32538, 262.968)
+
+[node name="st5" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 252.107, 3.26386, 261.004)
+
+[node name="st6" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 261.713, 3.33128, 244.795)
+
+[node name="st7" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 235.26, 4.48178, 249.786)
+
+[node name="st8" parent="." instance=ExtResource("3_p2u40")]
+transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 248.65, 3.6717, 229.86)

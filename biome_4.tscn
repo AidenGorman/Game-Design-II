@@ -1,10 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://cohvoht7iseim"]
+[gd_scene load_steps=16 format=3 uid="uid://cohvoht7iseim"]
 
 [ext_resource type="PackedScene" uid="uid://b8camnto3c3vn" path="res://FinalProjB4/futatsugoya_tunnel_abandoned_road_japan.glb" id="1_n65mx"]
 [ext_resource type="PackedScene" uid="uid://bpw2sd1q4xcek" path="res://fps_doozy.tscn" id="2_ve1qr"]
 [ext_resource type="PackedScene" uid="uid://b4jgi1om35u7j" path="res://particle_demo.tscn" id="3_2bue1"]
 [ext_resource type="PackedScene" uid="uid://c1aq7c4c8f53v" path="res://FinalProjB4/scary_creature.glb" id="4_mydh7"]
 [ext_resource type="PackedScene" uid="uid://crivi3ncf6dn7" path="res://goal.tscn" id="5_pvoec"]
+[ext_resource type="PackedScene" uid="uid://bjjdkhrsmnueb" path="res://FinalProjB4/chain_barrier.glb" id="6_5dfsu"]
+[ext_resource type="PackedScene" uid="uid://rk5wb7mrbuha" path="res://FinalProjB4/iron_chain.glb" id="7_1g6rc"]
+[ext_resource type="PackedScene" uid="uid://cnn0luuiw21sv" path="res://FinalProjB4/old_emergency_cone.glb" id="8_ocrsx"]
+[ext_resource type="PackedScene" uid="uid://cd1qwbqr25u70" path="res://FinalProjB4/exit_sign.glb" id="9_kcxi6"]
+[ext_resource type="PackedScene" uid="uid://c2k2b8ofmgwcy" path="res://FinalProjB4/halloween_creature.glb" id="10_hm657"]
+[ext_resource type="PackedScene" path="res://FinalProjB4/spiderthing_take_3.glb" id="11_7crrv"]
+[ext_resource type="PackedScene" uid="uid://b8dgm1e0nur00" path="res://FinalProjB4/monster.glb" id="12_im6a2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y03so"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -39,3 +46,33 @@ transform = Transform3D(1.05157, 0, 0.578104, 0, 1.2, 0, -0.578104, 0, 1.05157, 
 [node name="Goal" parent="." instance=ExtResource("5_pvoec")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -5.86566, 0.394637, -210.767)
 next_level = "biome_5"
+
+[node name="chain_barrier" parent="." instance=ExtResource("6_5dfsu")]
+transform = Transform3D(0.0109345, 0, 0.0102682, 0, 0.015, 0, -0.0102682, 0, 0.0109345, 1.63937, 2.16702, 180.22)
+
+[node name="ic1" parent="." instance=ExtResource("7_1g6rc")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, -0.955596, 5.04725, 175.292)
+
+[node name="ic2" parent="." instance=ExtResource("7_1g6rc")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 1.24189, 5.04725, 172.586)
+
+[node name="ic3" parent="." instance=ExtResource("7_1g6rc")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, -0.489518, 5.29046, 169.384)
+
+[node name="old_emergency_cone" parent="." instance=ExtResource("8_ocrsx")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.16408, 1.29673, 194.121)
+
+[node name="old_emergency_cone2" parent="." instance=ExtResource("8_ocrsx")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -2.90826, 1.77551, 183.019)
+
+[node name="exit_sign" parent="." instance=ExtResource("9_kcxi6")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, -0.232215, 7.35167, 177.05)
+
+[node name="halloween_creature" parent="." instance=ExtResource("10_hm657")]
+transform = Transform3D(1.21951, 0, 1.18439, 0, 1.7, 0, -1.18439, 0, 1.21951, -2.43291, 6.43818, 49.0352)
+
+[node name="spiderthing_take_3" parent="." instance=ExtResource("11_7crrv")]
+transform = Transform3D(-0.288234, 0.0831944, 0, -0.0831944, -0.288234, 0, 0, 0, 0.3, -1.12148, 7.16673, -26.9915)
+
+[node name="monster" parent="." instance=ExtResource("12_im6a2")]
+transform = Transform3D(0.728969, 0, -0.684547, 0, 1, 0, 0.684547, 0, 0.728969, 0.717994, 4.05514, -129.204)

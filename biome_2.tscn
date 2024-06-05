@@ -38,7 +38,7 @@ environment = SubResource("Environment_qjrv8")
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.301093, -2.85605, 0.563196)
 
 [node name="Doozy" parent="." instance=ExtResource("2_w26x3")]
-transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.694846, 5.38111)
+transform = Transform3D(-0.000684916, 0, -0.000728622, 0, 0.001, 0, 0.000728622, 0, -0.000684916, 5.09437, 0.499228, 5.38111)
 
 [node name="desert_rocks" parent="." instance=ExtResource("3_xfmmi")]
 transform = Transform3D(0.218691, 0, -0.205364, 0, 0.3, 0, 0.205364, 0, 0.218691, 4.81979, 0.558575, 4.81955)
